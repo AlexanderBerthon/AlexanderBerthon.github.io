@@ -8,28 +8,100 @@
   <!--Font import-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <section class="header">
     <nav>
       <a href="index.html"><img src="images/Untitled.png"></a>
-      <div class="nav-links">
-        <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">PROJECTS</a></li>
-          <li><a href="">EXPERIENCE</a></li>
-          <li><a href="">OTHER</a></li>
-        </ul>
-      </div>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="">EXPERIENCE</a></li>
+            <li><a href="">OTHER</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
   <div class="text-box">
     <h1>Heading 1</h1>
     <p>Description paragraph</p>
     <a href="" class="cool-btn">I think this is a link?</a>
   </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class ="section2">
+    <h1>Section Two</h1>
+    <p>filler text</p>
+
+    <div class="row">
+      <div class = "section2-col">
+        <h3>Header</h3>
+        <p>Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text</p>
+      </div>
+      <div class = "section2-col">
+        <h3>Header2</h3>
+        <p>Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text</p>
+      </div>
+      <div class = "section2-col">
+        <h3>Header3</h3>
+        <p>Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text</p>
+      </div>
+    </div>
 
 
   </section>
+
+<!--  section 3    -->
+
+  <section class="section3">
+    <h1>Section Three</h1>
+    <p>Section 3 description goes here</p>
+
+    <div class="row">
+      <div class = "section3-col">
+        <img src="images/Untitled.png">
+        <div class="layer">
+          <h3>HEADER</h3>
+      </div>
+    </div>
+    <div class = "section3-col">
+      <img src="images/Untitled.png">
+      <div class="layer">
+        <h3>HEADER2</h3>
+      </div>
+    </div>
+    <div class = "section3-col">
+      <img src="images/Untitled.png">
+      <div class="layer">
+        <h3>HEADER3</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4    -->
+  <section class="Section4">
+    <h1>Section Four</h1>
+    <p>Section four description goes here.</p>
+  </section>
+
+
+<!-- JavaScript for Toggle Menu //mobile -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
 </body>
 </html>
 
