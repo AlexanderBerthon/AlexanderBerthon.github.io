@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!--Font import-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/Untitled.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="">EXPERIENCE</a></li>
+            <li><a href="">OTHER</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About</h1>
+  </section>
+
+<!-- About Content -->
+<section class = "about-us">
+  <div class="row">
+    <div class = "about-col">
+      <h1>header......</h1>
+      <p>Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text</p>
+      <a href="" class="cool-btn red-btn">LINK</a>
+    </div>
+    <div class="about-col">
+      <img src="images/Untitled.png">
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+<section class="footer">
+  <h4>About</h4>
+  <p>Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text<br> Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text Filler Text</p>
+  <div class="socialmediaicons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JavaScript for Toggle Menu //mobile -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+</body>
+</html>
+
+<!-- This is really gross syntax for a comment.. -->
